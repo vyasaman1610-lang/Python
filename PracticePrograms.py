@@ -14,4 +14,30 @@ m = l//2
 print(str1[0:m]+str2+str1[m:l])
 '''
 ######################################################################
+# Practice Problem: Create a program to shift 0 at end.
+'''
+n = [0, 1, 0, 3, 5, 6]
 
+for i in n:
+    if i == 0:
+        n.remove(0)
+        n.append(0)
+
+print(n)
+'''
+######################################################################
+
+# Practice Problem: Create a function that takes a list and an integer N, and breaks the list into smaller sublists, each of length N. The last chunk may be shorter if the list length isn’t perfectly divisible by N.
+'''
+n = [1,2,3,4,5,6,7,8,9,10]
+N = int(input("Print sublist length "))
+l = len(n)
+
+m = []
+
+for i in range(0, l, N):
+    m.append(n[i:i+N])
+
+print(m)
+'''
+######################################################################
