@@ -41,3 +41,12 @@ for i in range(0, l, N):
 print(m)
 '''
 ######################################################################
+# Practice Problem: Create a function that takes an integer and creates a Triangle.
+'''
+r = int(input("Enter a no. "))
+
+for i in range(1, r + 1):
+    s = (" " * (r - i))
+    p =  ("*" *(2 * i -1))
+    print(s+p)
+    '''
