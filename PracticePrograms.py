@@ -51,3 +51,64 @@ for i in range(1, r + 1):
     print(s+p)
     
 '''
+#Practice Problem: Write a program to print the dimond shape pattern :
+
+'''
+r = int(input("Enter a no. "))
+
+for i in range(1, r + 1):
+    s = " " * (r - i)
+    p = "*" * (2 * i - 1)
+    print(s + p)
+
+for i in range(r - 1, 0, -1):
+    s = " " * (r - i)
+    p = "*" * (2 * i - 1)
+    print(s + p)
+    '''
+    #Practice Problem: Write a program to print the Square shape pattern :
+'''
+r = int(input("Enter a number: "))
+
+for i in range(1, r + 1):
+    if i == 1 or i == r:
+        print("* " * r)
+    else:
+        print("* " + "  " * (r - 2) + "*")
+        '''
+         #Practice Problem: Write a program to check a no. is palindrome or not :
+'''
+r = int(input("Enter a  no. "))
+t = r
+rev = 0
+
+while t > 0:
+    n = t % 10
+    rev = rev * 10 + n
+    t = t // 10
+
+if r == rev:
+    print("Palindrome number")
+else:
+    print("Not a palindrome.")
+    '''
+    #Practice Problem: Write a program to check a no. is Armstrong no. or not :
+'''    
+r = int(input("Enter a number: "))
+l = len(str(r))
+
+t = r
+sum = 0
+
+while t > 0:
+    n = t % 10
+    sum = sum + (n ** l)
+    t = t // 10
+
+if r == sum:
+    print("Armstrong number")
+else:
+    print("Not an Armstrong number")
+'''
+
+
